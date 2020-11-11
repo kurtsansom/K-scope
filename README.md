@@ -36,17 +36,16 @@ http://omni-compiler.org/index.html
 This software is written by pure Java to improve portability.
 We provide two-type packages: jar-executable package and source code package
 in our site. Especially, the source cord package includes all source codes
-necessary for modify and compiling. (The source codes includes Japanese
-comments by UTF-8.)
+necessary for modify and compiling.
 
-The source code package includes build.xml to compiler with Apache ant.
-Also compiling is simple and easy.
+The Maven project management tool is used to build the project.
+Building is easy:
 
 ```
-  $ ant
+  $ mvn clean package
 ```
 
-After the compiling, you may obtain jar-executable including classes.
+After the compiling, you may obtain jar-executable including classes in the `target` folder.
 Run is simple as follow.
 
 ```
@@ -56,7 +55,7 @@ Run is simple as follow.
 At the time of startup, K-scope requires specific folders for properties.
 If K-scope cannot find those folders, it may terminate abnormally.
 
-Tips on usage. VM-option "-Duser.language" is used for selecting language: "en" for English and "ja" for Japanese.
+Tips on usage: The JVM option `-Duser.language` is used for selecting language: `en` for English and `ja` for Japanese.
 
 ```
   $ java -jar -Duser.language=en kscope.jar ## for english mode
