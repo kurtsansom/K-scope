@@ -98,8 +98,8 @@ public class SettingViewDialog extends javax.swing.JDialog
     Message.getString("settingprojectdialog.column_header.type"), // type
     Message.getString("settingprogramdialog.label.name"), // name
     Message.getString("settingprojectdialog.column_header.value"), // value
-    Message.getString("settingprojectdialog.column_header.message")
-  }; // message
+    Message.getString("settingprojectdialog.column_header.message") // message
+  };
 
   /** Font selection button */
   private JButton btnFont;
