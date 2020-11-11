@@ -24,7 +24,7 @@ import javax.swing.SwingUtilities;
  * Global settings class for application progress messages, progress, etc.
  *
  * @author RIKEN
- */
+ */ 
 public class Application {
 
   /** Progress information */
