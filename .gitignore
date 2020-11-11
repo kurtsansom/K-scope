@@ -2,6 +2,8 @@
 *
 .*
 
+
+
 ### not ignore
 
 ## dirs (Do not ignore directories)
@@ -10,7 +12,7 @@
 
 ## files
 !.gitignore
-!build.xml
+!pom.xml
 !ChangeLog
 !license-headers
 !LICENSE
@@ -18,18 +20,14 @@
 !*.md
 !*.sh
 
-# Only one file in properties
-!/properties/properties.xml
-
 # include only these files in remote
-/properties/remote/**/*.yml
 !/properties/remote/**/*sample.yml
 
-### ignore
 
-## dirs
-/bin
+
+### ignore
+/target/
 
 ## files
+/properties/remote/**/*.yml
 .DS*
-/target/
