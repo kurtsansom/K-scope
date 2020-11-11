@@ -20,10 +20,50 @@ package jp.riken.kscope.language.utils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import jp.riken.kscope.language.*;
-import jp.riken.kscope.language.fortran.*;
+
+import jp.riken.kscope.language.Module;
+
+
+import jp.riken.kscope.language.Break;
+import jp.riken.kscope.language.Common;
+import jp.riken.kscope.language.Condition;
+import jp.riken.kscope.language.Continue;
+import jp.riken.kscope.language.Data;
+import jp.riken.kscope.language.DimensionIndex;
+import jp.riken.kscope.language.Directive;
+import jp.riken.kscope.language.DoNothing;
+import jp.riken.kscope.language.DynamicAllocation;
+import jp.riken.kscope.language.DynamicDeallocation;
+import jp.riken.kscope.language.DynamicNullification;
+import jp.riken.kscope.language.Equivalence;
+import jp.riken.kscope.language.ExecutableBody;
+import jp.riken.kscope.language.Expression;
+import jp.riken.kscope.language.Fortran;
+import jp.riken.kscope.language.GoTo;
+import jp.riken.kscope.language.IBlock;
+import jp.riken.kscope.language.Pause;
+import jp.riken.kscope.language.Procedure;
+import jp.riken.kscope.language.ProcedureUsage;
+import jp.riken.kscope.language.ProgramUnit;
+import jp.riken.kscope.language.Repetition;
+import jp.riken.kscope.language.Return;
+import jp.riken.kscope.language.Selection;
+import jp.riken.kscope.language.Substitution;
+import jp.riken.kscope.language.Termination;
+import jp.riken.kscope.language.UseState;
+import jp.riken.kscope.language.UserDefined;
+import jp.riken.kscope.language.Variable;
+import jp.riken.kscope.language.VariableDefinition;
+import jp.riken.kscope.language.VariableDimension;
+import jp.riken.kscope.language.fortran.Structure;
+import jp.riken.kscope.language.fortran.Type;
+import jp.riken.kscope.language.fortran.Union;
+import jp.riken.kscope.language.fortran.VariableAttribute;
+import jp.riken.kscope.language.fortran.VariableType;
 import jp.riken.kscope.language.fortran.VariableType.PrimitiveDataType;
-import jp.riken.kscope.language.generic.*;
+import jp.riken.kscope.language.generic.ProcedureItem;
+import jp.riken.kscope.language.generic.ProcedureWithNameOnly;
+import jp.riken.kscope.language.generic.Procedures;
 
 /**
  * Database reset class. Clear definition references for subroutines, functions, and variables.
