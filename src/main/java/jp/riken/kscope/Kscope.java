@@ -18,7 +18,6 @@ package jp.riken.kscope;
 
 import java.awt.EventQueue;
 import java.awt.Toolkit;
-import java.io.IOException;
 import java.io.InputStream;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
@@ -27,7 +26,6 @@ import jp.riken.kscope.gui.MainFrame;
 import jp.riken.kscope.properties.KscopeProperties;
 import jp.riken.kscope.service.AppController;
 import jp.riken.kscope.utils.Logger;
-import jp.riken.kscope.utils.ResourceUtils;
 
 /**
  * Main class
@@ -177,13 +175,13 @@ public class Kscope {
 
     KscopeProperties.PROPERTIES_FILE = KscopeProperties.PROPERTIES_FILE_DEFAULT;
 
-//    try {
-//      ResourceUtils.setRootAppClass(this.getClass());
-//      ResourceUtils.addFile("resources/icons");
-//    } catch (IOException e) {
-//      JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
-//      e.printStackTrace();
-//    }
+    //    try {
+    //      ResourceUtils.setRootAppClass(this.getClass());
+    //      ResourceUtils.addFile("resources/icons");
+    //    } catch (IOException e) {
+    //      JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
+    //      e.printStackTrace();
+    //    }
 
     // Read property file
     KscopeProperties.loadXml();

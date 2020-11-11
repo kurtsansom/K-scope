@@ -16,7 +16,6 @@
  */
 
 package jp.riken.kscope.language.utils;
-import jp.riken.kscope.language.Module;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,6 +24,7 @@ import java.util.Map;
 import java.util.Set;
 import jp.riken.kscope.Application;
 import jp.riken.kscope.language.*;
+import jp.riken.kscope.language.Module;
 import jp.riken.kscope.language.fortran.*;
 import jp.riken.kscope.language.generic.*;
 

@@ -17,13 +17,12 @@
 
 package jp.riken.kscope.language.utils;
 
-import jp.riken.kscope.language.Module;
-
 import java.util.ArrayList;
 import java.util.List;
 import jp.riken.kscope.information.InformationBlock;
 import jp.riken.kscope.information.InformationBlocks;
 import jp.riken.kscope.language.*;
+import jp.riken.kscope.language.Module;
 import jp.riken.kscope.language.fortran.*;
 import jp.riken.kscope.language.generic.*;
 

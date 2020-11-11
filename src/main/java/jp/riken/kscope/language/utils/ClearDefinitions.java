@@ -20,10 +20,6 @@ package jp.riken.kscope.language.utils;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-import jp.riken.kscope.language.Module;
-
-
 import jp.riken.kscope.language.Break;
 import jp.riken.kscope.language.Common;
 import jp.riken.kscope.language.Condition;
@@ -41,6 +37,7 @@ import jp.riken.kscope.language.Expression;
 import jp.riken.kscope.language.Fortran;
 import jp.riken.kscope.language.GoTo;
 import jp.riken.kscope.language.IBlock;
+import jp.riken.kscope.language.Module;
 import jp.riken.kscope.language.Pause;
 import jp.riken.kscope.language.Procedure;
 import jp.riken.kscope.language.ProcedureUsage;

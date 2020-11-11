@@ -18,7 +18,6 @@
 package jp.riken.kscope.utils;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
@@ -26,7 +25,6 @@ import java.net.MalformedURLException;
 import java.net.URLClassLoader;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import jp.riken.kscope.properties.KscopeProperties;
 
 /**
  * Resource utility class
@@ -86,7 +84,7 @@ public class ResourceUtils {
    */
   public static InputStream getPropertiesFile(String name) {
     try {
-    	return ResourceUtils.class.getResourceAsStream(name);
+      return ResourceUtils.class.getResourceAsStream(name);
     } catch (Exception e) {
       System.err.println("Error opening recource file " + name);
       e.printStackTrace();
