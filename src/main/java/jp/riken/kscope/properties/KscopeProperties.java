@@ -69,7 +69,7 @@ public class KscopeProperties {
   /** Database file */
   public static final String DATABASE_FILE = "db.ksx";
   /** Application property file */
-  public static final String PROPERTIES_FILE_DEFAULT = "properties.xml";
+  public static final String PROPERTIES_FILE_DEFAULT = "/properties.xml";
   /** Application property file */
   public static String PROPERTIES_FILE = null;
 

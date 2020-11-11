@@ -85,47 +85,8 @@ public class ResourceUtils {
    * @return Resource input stream
    */
   public static InputStream getPropertiesFile(String name) {
-    boolean debug = (System.getenv("DEBUG") != null);
     try {
-      java.net.URL url = ResourceUtils.class.getClassLoader().getResource(name);
-      if (url == null) {
-        url = rootAppClass.getResource(name);
-      }
-      if (url != null) {
-        InputStream is = url.openStream();
-        PROPERTIES_FILE_USED = url.getPath();
-        return is;
-      }
-
-      // Search from the properties folder from the classpath
-      url = rootAppClass.getResource(rootAppClass.getSimpleName() + ".class");
-      java.net.URI uri = url.toURI();
-      if (uri.toString().startsWith("jar:")) {
-        url = new java.net.URL(uri.toString().substring(4));
-        uri = url.toURI();
-      }
-
-      File file = new File(uri);
-      // if (file == null || !file.exists()) return null;
-
-      file = file.getParentFile().getParentFile();
-      File propatiesFolder = null;
-      while (file != null) {
-        File folder =
-            new File(file.getAbsolutePath() + File.separator + KscopeProperties.PROPERTIES_FOLDER);
-        if (folder.exists()) {
-          propatiesFolder = folder;
-          break;
-        }
-        file = file.getParentFile();
-      }
-
-      if (propatiesFolder != null) {
-        PROPERTIES_FILE_USED = propatiesFolder + File.separator + name;
-        InputStream is = new FileInputStream(PROPERTIES_FILE_USED);
-        return is;
-      }
-
+    	return ResourceUtils.class.getResourceAsStream(name);
     } catch (Exception e) {
       System.err.println("Error opening recource file " + name);
       e.printStackTrace();

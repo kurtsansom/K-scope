@@ -177,13 +177,13 @@ public class Kscope {
 
     KscopeProperties.PROPERTIES_FILE = KscopeProperties.PROPERTIES_FILE_DEFAULT;
 
-    try {
-      ResourceUtils.setRootAppClass(this.getClass());
-      ResourceUtils.addFile("resources/icons");
-    } catch (IOException e) {
-      JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
-      e.printStackTrace();
-    }
+//    try {
+//      ResourceUtils.setRootAppClass(this.getClass());
+//      ResourceUtils.addFile("resources/icons");
+//    } catch (IOException e) {
+//      JOptionPane.showMessageDialog(null, e, "Error", JOptionPane.ERROR_MESSAGE);
+//      e.printStackTrace();
+//    }
 
     // Read property file
     KscopeProperties.loadXml();
